@@ -1,0 +1,125 @@
+.banner-same {
+    padding: 185px 0 130px;
+    color: #ffffff;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    h3 {
+        font-size: 50px;
+        line-height: 50px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    @media (max-width: 767px) {
+        padding: 100px 0;
+
+        h3 {
+            font-size: 30px;
+        }
+    }
+}
+
+.furniture-page {
+    background: #f9f9f9;
+}
+
+.tab-content-custom {
+    margin-top: -110px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+
+    .nav {
+        border: none;
+        justify-content: center;
+
+        .nav-item {
+            margin-bottom: 8px;
+
+            &:last-child {
+                .nav-link {
+                    margin-right: 0;
+                }
+            }
+
+            .nav-link {
+                border: none;
+                font-size: 20px;
+                color: $theme;
+                background-color: $theme;
+                color: #fff;
+                border-radius: 0;
+                height: 55px;
+                line-height: 55px;
+                padding: 0 25px;
+                margin-right: 5px;
+
+                &.active {
+                    color: $theme;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        padding: 20px;
+        background: #ffffff;
+
+        .number {
+            font-size: 30px;
+            line-height: 50px;
+            margin-bottom: 20px;
+            font-weight: 600;
+
+            @media (min-width: 768px) {
+                font-size: 50px;
+            }
+        }
+
+        .p-desc {
+            font-size: 20px;
+            line-height: 50px;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+    }
+
+    @media (max-width: 991px) {
+        margin-top: -51px;
+
+        .nav .nav-item .nav-link {
+            font-size: 16px;
+            height: 43px;
+            line-height: 43px;
+            padding: 0 15px;
+        }
+    }
+}
+
+.pagi {
+    padding: 50px 0;
+
+    .prev,
+    .next {
+        display: inline-block;
+        padding: 2px 20px;
+        background: #b5b5b5;
+        border-radius: 5px;
+
+        i {
+            color: #fff;
+        }
+    }
+
+    li {
+        margin: 0 8px;
+
+        a {
+            color: $theme;
+            display: inline-block;
+            cursor: pointer;
+        }
+    }
+}
